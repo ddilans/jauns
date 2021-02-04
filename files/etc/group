@@ -1,0 +1,8 @@
+root:x:0:root
+floppy:x:1:root
+tty:x:2:root
+disk:x:3:root
+dialout:x:4:
+video:x:5:root
+audio:x:6:root
+cdrom:x:7:root

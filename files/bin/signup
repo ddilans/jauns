@@ -1,0 +1,3 @@
+#!/bin/sh
+url="$(grep -o '^${1} ' /etc/repos)"
+echo "${url}/${2}/feed" >> /etc/feed

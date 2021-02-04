@@ -1,0 +1,9 @@
+::sysinit:/etc/init.d/rcS
+
+#if getty doesn't work
+#::askfirst:-/bin/sh
+
+::respawn:/bin/getty 38400 tt1 linux
+
+::restart:/bin/init
+::shutdown:/bin/umount -a -r

@@ -1,0 +1,12 @@
+export EDITOR=/bin/vi
+export PAGER=/bin/less
+export PATH=/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/bin
+export PS1='$(basename "$PWD")$ '
+alias xstow='xstow -dir /pkgs -F /etc/xstow.ini'
+
+if [ -x /bin/id ]; then
+export USER="$(whoami)"
+export LOGNAME="$USER"
+export MAIL="/var/spool/mail/$USER"
+fi
+
