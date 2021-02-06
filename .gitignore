@@ -4,6 +4,7 @@
 *.tar.bz2
 *.img
 *.img.mod
+*.iso
 glibc-2.33
 xstow-1.0.2
 linux-5.10.12

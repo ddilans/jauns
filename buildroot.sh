@@ -1,8 +1,10 @@
 #!/bin/sh
 BUILD_DIR="$PWD"
+cd linux-5.10.12
+cp arch/x86_64/boot/bzImage /mnt/jauns/vmlinuz
 cd /mnt/jauns
-mkdir bin dev etc proc sys boot pkgs run
-mkdir dev/pts
+mkdir bin dev etc proc sys boot pkgs run home
+mkdir dev/pts home/root
 cp "${BUILD_DIR}/busybox-1.33.0/busybox" /mnt/jauns/bin/busybox
 cd bin && for t in $(./busybox --list); do ln -s busybox $t; done
 cd /mnt/jauns
