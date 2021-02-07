@@ -2,6 +2,8 @@
 BUILD_DIR="$PWD"
 cd linux-5.10.12
 cp arch/x86_64/boot/bzImage /mnt/jauns/vmlinuz
+mkdir /mnt/jauns/usr
+cp -r usr/include /mnt/jauns/usr
 cd /mnt/jauns
 mkdir bin dev etc proc sys boot pkgs run home
 mkdir dev/pts home/root

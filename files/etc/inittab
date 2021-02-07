@@ -4,6 +4,8 @@
 #::askfirst:-/bin/sh
 
 ::respawn:/bin/getty 0 tty1
+#if you want serial login
+::respawn:/bin/getty 19200 ttyS0
 
 ::restart:/bin/init
 ::shutdown:/bin/umount -a -r

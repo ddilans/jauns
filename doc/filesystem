@@ -1,0 +1,6 @@
+dd if=/dev/zero of=filesystem.img bs=1M count=2048
+fdisk filesystem.img
+#with scripts use a bootable fat32 partition and then a linux partition under MBR
+partx -a -v filesystem.img
+mkfs.ext4 /dev/loop0p2
+mkfs.vfat -F32 /dev/loop0p1
