@@ -1,2 +1,4 @@
-./configure --enable-static
-make
+./configure --prefix=/usr --bindir=/bin --sysconfdir=/etc --enable-static --without-curses
+make all
+cd src/
+make DESTDIR=/mnt/jauns install

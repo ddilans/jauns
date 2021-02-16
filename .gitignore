@@ -9,3 +9,4 @@ glibc-2.33
 xstow-1.0.2
 linux-5.10.12
 busybox-1.33.0
+gcc-10.2.0
